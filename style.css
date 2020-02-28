@@ -1,0 +1,309 @@
+*{
+    margin:0px;
+    padding: 0px;;
+}
+
+main{
+    width:90%;
+    margin: 10px auto;
+    /* background: rgba(128, 128, 128,0.02); */
+    background: white;
+    line-height: 1.5em;
+
+}
+
+
+/*banner section */
+
+nav h2{
+    text-align: center;
+    margin:0px;
+    padding:10px;
+    background: rgba(146, 134, 118,0.4);
+    
+    font-weight: bolder;
+    text-transform: uppercase;
+    /* position:fixed;
+    width: 100%;
+    top:0px; */
+}
+
+nav h2 a{
+    text-decoration: none;
+    color:rgb(219, 9, 9);
+}
+
+header{
+    display: absolute;
+    background: url(images/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:96vh;
+    /* opacity:0.5; */
+    font-size:1.2em;
+    color:white;
+}
+
+.btn{
+    display: block;
+    color:white;
+    padding:10px 20px;
+    text-align: center;
+    background: rgb(61, 58, 58);
+    margin:10px auto;
+    width: 120px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-transform: uppercase;  
+
+}
+
+.btn:hover{
+    background: rgba(61, 58, 58,0.6);
+}
+
+
+.main-nav ul{
+    margin-top:100px;
+    opacity:0;
+    background: rgba(17, 1, 1,0.3);
+    font-weight: bolder;
+    padding:5px;
+    transition: 1s;
+    list-style-type: none;
+}
+
+
+.main-nav ul li a{
+    display: block;
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+    
+}
+
+.main-nav ul li{
+    text-align: center;
+    padding:5px 0px;
+    transition: 1s;
+    transform: translateX(-100%);
+    padding:2px 10px;
+}
+.main-nav ul{
+    margin-top:0px;
+}
+
+
+.main-nav ul li:hover{
+    background: rgba(128, 128, 128,0.5);
+    cursor: pointer;
+    transform: scale(1.2);
+    
+}
+
+.main-nav ul li a:hover{
+    color:rgb(63, 16, 219);
+}
+
+/*toggle controls container */
+
+.toggle-control{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;;
+}
+
+.nav-toggle-close{
+    font-size: 1.4em;
+    padding:5px 8px;
+    background: red;
+    margin-right:5px;
+    cursor:pointer;
+    transition: 0.8s;
+    display: none;
+
+}
+
+
+
+
+
+/*  Toggle nav bar */
+
+.nav-toggle{
+    width:50px;
+    background: red;
+    padding:2px;
+    cursor: pointer;
+    transition: 0.7s;
+    margin-left:7px;
+    border-radius: 5px;
+}
+
+.nav-toggle:hover,.nav-toggle-close:hover{
+    background:rgba(255,0,0,0.7);
+}
+
+.nav-toggle div{
+    display: block;
+    border:3px solid white;
+    margin:5px;
+
+}
+
+
+
+
+
+.landing-section{
+    margin-top:140px;
+    text-align: center;
+}
+
+.landing-section h2{
+    text-transform:uppercase;
+    margin-bottom: 10px;
+}
+
+
+
+
+.make-it{
+    width:80%;
+    margin: 20px auto;
+}
+
+.make-it h3{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+
+/* .articles{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:10px;
+} */
+
+/* .description{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:20px;
+
+} */
+
+.articles article{
+    margin-bottom: 20px;
+    
+    background: rgb(246, 245, 245);
+    padding:15px;
+}
+
+img{
+    border-radius: 20px;
+    width:100%;
+    height: 40vh;
+}
+
+.heading{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+p,div{
+    margin-bottom: 20px;
+}
+
+
+
+
+.testimonies >.test-subsection div{
+    text-align: center;
+
+}
+
+
+footer div{
+    width:100%;
+    background: rgb(97, 83, 83);
+    background: rgb(32, 21, 95);
+    text-align: center;
+    color:white;
+    padding-top:50px;
+    padding-bottom:15px;
+    margin: 0px;
+
+}
+
+footer div a{
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+
+
+
+/* media querries */
+
+
+
+@media(min-width:700px){
+
+
+    /* header styles */
+    .toggle-control{
+        display:none;
+    }
+   
+
+    .main-nav ul{
+        opacity:1;
+        display: block;
+    }
+
+    .main-nav ul li{
+        display: inline-block;
+        transform: translateX(0%);
+        margin-right: 10px;
+        font-size: 0.8em;
+    }
+
+    .main-nav ul li a:hover{
+        color:red;
+        
+    }
+
+    .main-nav ul li:hover{
+        border-radius: 10px;
+
+    }
+
+    .main-nav{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav h2{
+        height:25px;
+
+    }
+
+
+
+    
+    .testimonies,.articles,footer,#section-b{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    footer{
+        gap:0px;
+    }
+}
+
+
